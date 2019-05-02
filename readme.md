@@ -17,8 +17,8 @@ This is a prerelease software. At some point it might be expanded – maybe even
 + The `sendMessage()`'s message cannot be anything beyond a base datatype, so strings, booleans, JSON objects, numbers, and floats are great, but p5 objects like `color()` wont be able to be sent.
 
 ##### Live Examples
-+ [Basic Example](basic_example/index.html) (open the console on all pages, click the page to interact)
-+ [Draw Example](draw_example/index.html) (Click the page to interact)
++ [Basic Example](http://bmoren.github.io/p5.localmessage/basic_example/index.html) (open the console on all pages, click the page to interact)
++ [Draw Example](http://bmoren.github.io/p5.localmessage/draw_example/index.html) (Click the page to interact)
 + more eventually!
 
 ##### License
