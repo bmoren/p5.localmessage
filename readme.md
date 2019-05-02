@@ -5,7 +5,7 @@ p5.localmessage provides a simple interface to send messages **locally** from on
 
 This is a prerelease software, at some point it might be expanded, and maybe even expand to include load of other things with service workers to make those accessible in p5.js.
 
-+ [How to Add a library to your p5.js sketch](http://p5js.org/libraries/#using-a-library)
+[How to Add a library to your p5.js sketch](http://p5js.org/libraries/#using-a-library)
 
 ##### Important tips & known limitations
 + You must register the `service-worker.js` file using the `registerServiceWorker()` function in the `setup()` before you begin.
@@ -33,7 +33,6 @@ p5.localmessage is licensed [MIT](https://choosealicense.com/licenses/mit/) just
 + [getLocalID()](#getLocalID)
 
 
----
 #### registerServiceWorker()
 ###### registerServiceWorker('path/to/service-worker.js')
 registers the service worker which conducts the message relay using a relative path to the service-worker.js file from the main sketch.js file. **You must do this first.** This interface is provided so you can organize your files how ever you'd like. the example below is representative of how this would look on the p5.js web editor.
@@ -43,13 +42,12 @@ function setup() {
   registerServiceWorker('../service-worker.js')
 }
 ```
----
 
 #### sendMessage()
 ###### sendMessage('the message to send')
 sendMessage() sends a message to other clients, it will not send the message to itself. This can be any datatype, including a JSON object which can be used to send more complex data! This can be used in the `draw()` loop for real time interaction across windows!
 
-###### sendMessage() basic example:
+##### sendMessage() basic example:
 ```javascript
 function mouseClicked(){
   //this will only go to the other clients that are connected (not itself).
@@ -57,7 +55,7 @@ function mouseClicked(){
 }
 ```
 
-###### sendMessage() JSON example:
+##### sendMessage() JSON example:
 ```javascript
 function mouseClicked(){
   //package up data as a JSON object
@@ -72,7 +70,6 @@ function mouseClicked(){
 
 }
 ```
----
 
 #### listenMessage()
 ###### listenMessage(callback)
