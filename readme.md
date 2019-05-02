@@ -26,12 +26,13 @@ p5.localmessage is licensed [MIT](https://choosealicense.com/licenses/mit/) just
 
 ---
 
-### p5.localmessage:
+### p5.localmessage table of contents:
 + [registerServiceWorker()](#registerServiceWorker)
 + [sendMessage()](#sendmessage)
 + [listenMessage()](#listenmessage)
-+ [getLocalID()](#getLocalID)
+<!-- + [getLocalID()](#getLocalID) -->
 
+---
 
 #### registerServiceWorker()
 ###### registerServiceWorker('path/to/service-worker.js')
