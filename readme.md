@@ -1,4 +1,4 @@
-### p5.localmessage
+## p5.localmessage
 ![logo for p5.localmessage](p5.localmessage.png)
 
 p5.localmessage provides a simple interface to send messages **locally** from one sketch to another. This is a very useful tool for multi window sketches, or allowing sketches to communicate with one another across multiple displays.
@@ -34,7 +34,7 @@ p5.localmessage is licensed [MIT](https://choosealicense.com/licenses/mit/) just
 
 ---
 
-#### registerServiceWorker()
+### registerServiceWorker()
 ###### registerServiceWorker('path/to/service-worker.js')
 Registers the service worker which conducts the message relay using a relative path to the service-worker.js file from the main sketch.js file. **You must do this first.** This interface is provided so you can organize your files how ever you'd like. The example below is representative of how this would look on the p5.js web editor.
 
@@ -44,7 +44,7 @@ function setup() {
 }
 ```
 
-#### sendMessage()
+### sendMessage()
 ###### sendMessage('the message to send')
 sendMessage() sends a message to other clients, it will not send the message to itself. This can be any datatype, including a JSON object which can be used to send more complex data! This can be used in the `draw()` loop for real time interaction across windows!
 
@@ -72,7 +72,7 @@ function mouseClicked(){
 }
 ```
 
-#### listenMessage()
+### listenMessage()
 ###### listenMessage(callback)
 listenMessage() listens for incoming messages from other clients. It will ignore messages from itself! It takes a callback function which will be fired each time a new message arrives. The incoming data to the callback is a JSON object containing 2 keys. `client` and `message`.
 
@@ -96,7 +96,7 @@ function setup() {
   ```
 
 
-<!-- #### getLocalID()
+<!-- ### getLocalID()
 ###### getLocalID()
 returns the client's **own** ID #. This can be used for comparison on other clients in order to filter specific behaviors based on which specific client sent the message. See the `client_filtering` example for more details
 
