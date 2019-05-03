@@ -19,7 +19,9 @@ This is a prerelease software. At some point it might be expanded – maybe even
 ##### Live Examples
 + [Basic Example](http://bmoren.github.io/p5.localmessage/basic_example/index.html) (open the console on all pages, click the page to interact)
 + [Draw Example](http://bmoren.github.io/p5.localmessage/draw_example/index.html) (Click the page to interact)
-+ more eventually!
++ [Basic Communication between a controller sketch & display sketch](http://bmoren.github.io/p5.localmessage/two_sketch_communication_example/index.html)
++ [Advanced Communication with multiple pieces of data](http://bmoren.github.io/p5.localmessage/advanced_communication_example/index.html)
+
 
 ##### License
 p5.localmessage is licensed [MIT](https://choosealicense.com/licenses/mit/) just like the [service worker cookbook](https://github.com/mozilla/serviceworker-cookbook) it's based upon.
