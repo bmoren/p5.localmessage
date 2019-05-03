@@ -10,7 +10,7 @@ This is a prerelease software. At some point it might be expanded – maybe even
 ##### Important tips & known limitations
 + You must register the `service-worker.js` file using the `registerServiceWorker()` function in the `setup()` before you begin.
 + currently p5.localmessage will **NOT** work with the p5.js web editor. Consider moving your project to an external editor with your own web hosting setup.
-+ Be aware that not all browsers support service workers, or all functionality of service workers. Check the JS console for errors. When in doubt, try another browser!
++ Be aware that not all browsers support service workers, or all functionality of service workers. Check the JS console for errors. When in doubt, try another browser! *(testing shows best functionality currently in CHROME)*
 + The word clients in the documentation below refers to *other* pages opened on the same URL with the same service worker enabled.
 + This library will only work if you're running sketches from the **same domain**.
 + There are full sketch examples in the various example folders
