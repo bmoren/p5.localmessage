@@ -1,7 +1,7 @@
 ## p5.localmessage
 ![logo for p5.localmessage](p5.localmessage.png)
 
-p5.localmessage provides a simple interface to send messages **locally** from one sketch to another. This is a very useful tool for multi window sketches, or allowing sketches to communicate with one another across multiple displays.
+p5.localmessage provides a simple interface to send messages **locally** from one sketch to another. This is a very useful tool for multi window sketches, or allowing sketches to communicate with one another across multiple displays connected to the same machine. A typical application is having one sketch as a controller window and another sketch as the visual output. 
 
 This is a prerelease software. At some point it might be expanded – maybe even to include a bunch of other service worker things that would be cool to use in p5.js.
 
