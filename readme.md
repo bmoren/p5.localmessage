@@ -9,19 +9,18 @@ This is a prerelease software. At some point it might be expanded – maybe even
 
 ##### Important tips & known limitations
 + You must register the `service-worker.js` file using the `registerServiceWorker()` function in the `setup()` before you begin.
++ currently p5.localmessage will **NOT** work with the p5.js web editor. Consider moving your project to an external editor with your own web hosting setup.
 + Be aware that not all browsers support service workers, or all functionality of service workers. Check the JS console for errors. When in doubt, try another browser!
 + The word clients in the documentation below refers to *other* pages opened on the same URL with the same service worker enabled.
-+ This library will only work if you're running sketches from the **same domain**. (to test this, open 2 different examples, and send a message, they will be able to communicate with one another!)
-+ This will NOT work across 2 different sketches hosted by the p5.js web editor. to achieve this kind of communication, consider moving your project to your own web hosting setup. (check that this is true)
++ This library will only work if you're running sketches from the **same domain**.
 + There are full sketch examples in the various example folders
-+ The `sendMessage()`'s message cannot be anything beyond a base datatype, so strings, booleans, JSON objects, numbers, and floats are great, but p5 objects like `color()` wont be able to be sent.
++ The `sendMessage()`'s message cannot be anything beyond a base datatype, so strings, booleans, JSON objects, numbers, and floats are great, but p5 objects like `color()` will not be able to be sent.
 
 ##### Live Examples
 + [Basic Example](http://bmoren.github.io/p5.localmessage/basic_example/index.html) (open the console on all pages, click the page to interact)
 + [Draw Example](http://bmoren.github.io/p5.localmessage/draw_example/index.html) (Click the page to interact)
 + [Basic Communication between a controller sketch & display sketch](http://bmoren.github.io/p5.localmessage/two_sketch_communication_example/index.html)
 + [Advanced Communication with multiple pieces of data](http://bmoren.github.io/p5.localmessage/advanced_communication_example/index.html)
-
 
 ##### License
 p5.localmessage is licensed [MIT](https://choosealicense.com/licenses/mit/) just like the [service worker cookbook](https://github.com/mozilla/serviceworker-cookbook) it's based upon.
@@ -38,7 +37,7 @@ p5.localmessage is licensed [MIT](https://choosealicense.com/licenses/mit/) just
 
 ### registerServiceWorker()
 ###### registerServiceWorker('path/to/service-worker.js')
-Registers the service worker which conducts the message relay using a relative path to the service-worker.js file from the main sketch.js file. **You must do this first.** This interface is provided so you can organize your files how ever you'd like. The example below is representative of how this would look on the p5.js web editor.
+Registers the service worker which conducts the message relay using a relative path to the service-worker.js file from the main sketch.js file. **You must do this first.** This interface is provided so you can organize your files however you'd like. The example below is representative of how this would look on the provided examples.
 
 ```javascript
 function setup() {
