@@ -35,6 +35,7 @@ console.log("%c p5.localmessage Loaded ", "color:yellow; background:black; ");
    //There isn’t always a service worker to send a message to. This can happen when the page is force reloaded.
     if (!navigator.serviceWorker.controller) {
       console.error('no service worker controller, try again, or try another browser')
+      return;
     }
 
     //Send the message to the service worker.
