@@ -1,9 +1,6 @@
 ## p5.localmessage
 ![logo for p5.localmessage](p5.localmessage.png)
 
-![animated gif showing features of p5.localmessage](p5.localmessage.gif)
-
-
 p5.localmessage provides a simple interface to send messages **locally** from one sketch to another. This is a very useful tool for multi window sketches, or allowing sketches to communicate with one another across multiple displays connected to the same machine. A typical application is having one sketch as a controller window and another sketch as the visual output.
 
 This is a prerelease software. At some point it might be expanded – maybe even to include a bunch of other service worker things that would be cool to use in p5.js.
@@ -24,6 +21,9 @@ This is a prerelease software. At some point it might be expanded – maybe even
 + [Draw Example](http://bmoren.github.io/p5.localmessage/draw_example/index.html) (Click the page to interact)
 + [Basic Communication between a controller sketch & display sketch](http://bmoren.github.io/p5.localmessage/two_sketch_communication_example/index.html)
 + [Advanced Communication with multiple pieces of data](http://bmoren.github.io/p5.localmessage/advanced_communication_example/index.html)
+
+![animated gif showing features of p5.localmessage](p5.localmessage.gif)
+
 
 ##### License
 p5.localmessage is licensed [MIT](https://choosealicense.com/licenses/mit/) just like the [service worker cookbook](https://github.com/mozilla/serviceworker-cookbook) it's based upon.
